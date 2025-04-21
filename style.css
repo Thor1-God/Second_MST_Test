@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: black;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .mask-svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .masked-rect {
+    width: 100%;
+    height: 100%;
+    fill: black;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 3;
+    font-size: clamp(5rem, 5vw + 1rem, 7rem);
+    font-weight: bold;
+    line-height: 1.4;
+    /* text-align: justify; */
+  }
+  
+  .reveal {
+    display: inline-block;
+    vertical-align: middle;
+    height: 0.8em;
+    background: transparent;
+  }
+
+  /* .reveal {
+    display: inline-block;
+    height: 1em;
+    width: 0;
+    background: transparent;
+    color: transparent;
+    pointer-events: none;
+    user-select: none;
+    vertical-align: baseline;
+  } */
+  
+  .left-text {
+    text-align: right;
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  .right-text {
+    text-align: left;
+    display: inline-block;
+    width: fit-content;
+  }
+  .text-div {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .hidden-text {
+    vertical-align: middle;
+    font-size: clamp(5rem, 5vw + 1rem, 7rem);
+    background: transparent;
+    color: transparent;
+    user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none;  
+  }  
+  
+  .full-line {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    min-width: 0;
+    max-width: 100%;
+
+  }
+  
+  .div-line {
+    height: 1em;
+    background: transparent; 
+    width: 100%;
+    overflow: hidden
+  }
+
+
+  
